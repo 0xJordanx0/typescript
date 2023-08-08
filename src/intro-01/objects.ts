@@ -5,7 +5,7 @@ const User = {
 }
 
 function createUser({name: string, isPaid: boolean}){
-    //Logic here
+    // Logic here
 }
 
 
@@ -17,3 +17,15 @@ function createCourse():{name: string, price: number}{
     return {name: "react", price: 399}
 }
 
+type User = {
+    name: string,
+    email: string,
+    isActive: boolean
+}
+
+function createNewUser(user: User):User {
+    // Logic Here
+    return user;
+}
+
+createNewUser({name: "0xjordan", email: "test@email.com", isActive: true})

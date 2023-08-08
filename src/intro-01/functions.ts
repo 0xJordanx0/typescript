@@ -40,4 +40,8 @@ function consoleError(error: string):void {
     console.log(error)
 }
 
+function handleError(error: string):never {
+    throw new Error(error);
+}
+
 consoleError("Error 404");
