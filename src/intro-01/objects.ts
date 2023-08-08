@@ -46,3 +46,16 @@ let myUser: UserReadOnly = {
 }
 
 myUser.email = "tester@gmail.com";
+
+type cardNumber = {
+    cardnumber: string
+}
+
+type cardDate = {
+    cardDate: string
+}
+
+type cardDetails = cardNumber & cardDate & {
+    cvv: number
+}
+
