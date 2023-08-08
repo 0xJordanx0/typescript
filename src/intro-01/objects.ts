@@ -21,6 +21,14 @@ type User = {
     name: string,
     email: string,
     isActive: boolean
+    credCardDetails?: number //Optional
+}
+
+type UserReadOnly = {
+    readonly _id: string,
+    name: string,
+    email: string,
+    isActive: boolean
 }
 
 function createNewUser(user: User):User {
@@ -29,3 +37,12 @@ function createNewUser(user: User):User {
 }
 
 createNewUser({name: "0xjordan", email: "test@email.com", isActive: true})
+
+let myUser: UserReadOnly = {
+    _id: "12345",
+    name: "0xjordan",
+    email: "test@gmail.com",
+    isActive: false
+}
+
+myUser.email = "tester@gmail.com";
