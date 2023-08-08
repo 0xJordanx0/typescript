@@ -20,3 +20,24 @@ getUpper("0xjordan");
 signUpUser("0xjordan","test@email.com","123456789");
 loginUser("0xjordan", "test@gmail.com")
 
+
+const getHello = (s: string):string => {
+    return "Hello";
+}
+
+const heros = ["thor", "spiderman", "ironman"]
+const numbers = [1,2,3]
+
+heros.map((hero): string => {
+    return `hero is ${hero}`
+})
+
+numbers.map(number => {
+    return `number is ${number}`
+})
+
+function consoleError(error: string):void {
+    console.log(error)
+}
+
+consoleError("Error 404");
